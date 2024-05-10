@@ -1,0 +1,336 @@
+
+import java.io.*;
+  import java.util.Scanner;
+  public class OnlineQuizSystem 
+{
+ public static int quiz(String name)
+ {
+	 	System.out.println(name +",here the quiz starts!!\n");
+		System.out.println("Question 1:When was Mahatma Gandhi born?");
+		System.out.println("Options:\n1. 2nd October\t2. 30th October\t3. 16th October"); 
+		int q1,q2,q3,q4,q5,q6,q7,q8,q9,q10;
+		int score=0;
+		
+		//first question
+		Scanner getValue = new Scanner(System.in);
+		q1 = getValue.nextInt();
+		if(q1==1)
+		{
+		System.out.println("Yes it is the correct answer");
+		score+=10;
+		System.out.println("Your current score is: "+score);
+		}
+		else if(q1==2)
+		{
+			System.out.println("No, the correct answer is 2nd October");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q1==3)
+		{
+			System.out.println("No, the correct answer is 2nd October");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("The correct answer is 2nd October");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//second question
+		System.out.println("Question 2: What is the largest lake in the world?");
+		System.out.println("Options:\n1. Caspian Sea\t2. Baikal\t3. Lake Superior"); 
+		Scanner getValue1 = new Scanner(System.in);
+		q2 = getValue1.nextInt();
+		if(q2==1)
+		{
+			System.out.println("No, the correct answer is Baikal");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q2==2)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q2==3)
+		{
+			System.out.println("No, the correct answer is Baikal");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("The correct answer is Baikal");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//third question
+		System.out.println("Question 3: Which planet in the solar system is known as the Red Planet?");
+		System.out.println("Options:\n1. Venus\t2. Earth\t3. Mars"); 
+		Scanner getValue2 = new Scanner(System.in);
+		q3 = getValue2.nextInt();
+		if(q3==1)
+		{
+			System.out.println("No, the correct answer is Mars");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q3==2)
+		{
+			System.out.println("No, the correct answer is Mars");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q3==3)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("The correct answer is Mars");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//fourth question
+		System.out.println("Question 4: Which river is the longest in the world?");
+		System.out.println("Options:\n1. Amazon\t2. Mississippi\t3. Nile"); 
+		Scanner getValue3 = new Scanner(System.in);
+		q4 = getValue3.nextInt();
+		if(q4==1)
+		{
+			System.out.println("No, the correct answer is Nile");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q4==2)
+		{
+			System.out.println("No, the correct answer is Nile");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q4==3)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("The correct answer is Nile");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//fifth question
+		System.out.println("Question 5: What gas is used to extinguish fires?");
+		System.out.println("Options:\n1. Nitrogen\t2. Carbon Dioxide\t3. Oxygen"); 
+		Scanner getValue4 = new Scanner(System.in);
+		q5 = getValue4.nextInt();
+		if(q5==1)
+		{
+			System.out.println("No, the correct answer is Carbon Dioxide");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q5==2)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q5==3)
+		{
+			System.out.println("No, the correct answer is Carbon Dioxide");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is Carbon Dioxide");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//sixth question
+		System.out.println("Question 6: Who is the author of the Harry Potter book series?");
+		System.out.println("Options:\n1. J.K.Rowling\t2. J.R.R.Tolkien\t3. C.S.Lewis"); 
+		Scanner getValue5 = new Scanner(System.in);
+		q6 = getValue5.nextInt();
+		if(q6==1)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q6==2)
+		{
+			System.out.println("No, the correct answer is J.K.Rowling ");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q6==3)
+		{
+			System.out.println("No, the correct answer is J.K.Rowling ");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is J.K.Rowling");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//seventh question
+		System.out.println("Question 7: What is the capital city of Australia?");
+		System.out.println("Options:\n1. Canberra\t2. Perth\t3. Sydney"); 
+		Scanner getValue6 = new Scanner(System.in);
+		q7 = getValue6.nextInt();
+		if(q7==1)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q7==2)
+		{
+			System.out.println("No, the correct answer is Canberra ");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q7==3)
+		{
+			System.out.println("No, the correct answer is Canberra ");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is Canberra");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//eight question
+		System.out.println("Question 8: Who painted Mona Lisa?");
+		System.out.println("Options:\n1. Vincent van Gogh\t2. Michelangelo\t3. Leonardo da Vinci"); 
+		Scanner getValue7 = new Scanner(System.in);
+		q8 = getValue7.nextInt();
+		if(q8==1)
+		{
+			System.out.println("No, the correct answer is Leonardo da Vinci  ");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q8==2)
+		{
+			System.out.println("No, the correct answer is Leonardo da Vinci  ");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q8==3)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is Leonardo da Vinci");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//ninth question
+		System.out.println("Question 9: What is the largest ocean on Earth?");
+		System.out.println("Options:\n1. Pacific Ocean\t2. Artic Ocean\t3. Indian Ocean"); 
+		Scanner getValue8 = new Scanner(System.in);
+		q9 = getValue8.nextInt();
+		if(q9==1)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q9==2)
+		{
+			System.out.println("No, the correct answer is Pacific Ocean");
+			System.out.println("Your current score is: "+score);
+		}
+		else if(q9==3)
+		{
+			System.out.println("No, the correct answer is Pacific Ocean");
+			System.out.println("Your current score is: "+score);
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is Pacific Ocean");
+			System.out.println("Your current score is: "+score);
+		}
+		
+		System.out.println("\n");
+		
+		//tenth question
+		System.out.println("Question 10: Which gas is responsible for the depletion of the ozone layer?");
+		System.out.println("Options:\n1. Carbon Dioxide\t2. Chlorofluorocarbons\t3. Methane"); 
+		Scanner getValue9 = new Scanner(System.in);
+		q10 = getValue9.nextInt();
+		if(q10==1)
+		{
+			System.out.println("No, the correct answer is Chlorofluorocarbons");
+		}
+		else if(q10==2)
+		{
+			System.out.println("Yes it is the correct answer");
+			score+=10;
+		}
+		else if(q10==3)
+		{
+			System.out.println("No, the correct answer is Chlorofluorocarbons");
+		}
+		else
+		{
+			System.out.println("No such option your answer is wrong");
+			System.out.println("No, the correct answer is Chlorofluorocarbons");
+		}
+		
+		return score;
+ }
+	public static void main(String[] args)
+	{
+		String name = null;
+		System.out.println("Welcome to Online Quiz\t\t");
+		System.out.println("RULES:\n*It contains 10 questions and all the questions must be attended\n*Each question gets 10 marks\n*Choosing of wrong options will be declared as zero");
+		System.out.println("Are you ready to attend the QUIZ?");
+		int ivalue;
+		System.out.println("1.Yes\t\t2.No");
+		Scanner getValue = new Scanner(System.in);
+		ivalue = getValue.nextInt();
+		if(ivalue==2)
+		{
+			System.out.println("Thank you");
+		}
+		
+		else if(ivalue==1)
+		{
+			System.out.println("Enter your name:");
+			getValue = new Scanner(System.in);
+			name = getValue.nextLine();
+			int s= quiz(name);
+			System.out.println("Your final score is: "+s);
+			int nqa;
+			nqa = s/10;
+			System.out.println("No. of correct questions answered:"+nqa+" out of 10");
+		}
+	}
+
+}
